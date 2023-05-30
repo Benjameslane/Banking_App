@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+
+            Person ben = new Person("Ben", "Lane");
+            Person ryan = new Person("Ryan", "Smith");
+
+            BankAccount bensAccount = new BankAccount(ben, 1000);
+            Console.WriteLine(bensAccount.Balance);
         }
     }
 }
