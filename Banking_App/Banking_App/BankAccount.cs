@@ -41,6 +41,20 @@ namespace Banking_App
 
         }
 
+        public void Deposit(double amount)
+        {
+            _balance += amount;
+        }
+           public void Withdraw(double amount)
+        {
+            _balance -= amount;
+        }
+
+
+        public void ApplyInterest()
+        {
+            _balance += _balance * (InterestRate / 100);
+        }
 
 
     }
